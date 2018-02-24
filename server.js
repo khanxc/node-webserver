@@ -19,6 +19,7 @@ app.use((req,res, next) => {
   fs.appendFile('server.log', log + '\n', (err) => {
     if(err){
       console.log('Unable to append server log');
+      console.log('Sample error');
     }
   });
 
